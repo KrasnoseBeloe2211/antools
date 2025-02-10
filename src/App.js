@@ -114,7 +114,7 @@ function App() {
     </>
   );
 
-  function AddFavourite (appCard, index, like) {
+  function AddFavourite (appCard) {
     if (appCard.isliked === false) {
       SetFavourites([...favourites, appCard]) 
       let object = data[data.indexOf(appCard)]

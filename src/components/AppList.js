@@ -15,7 +15,7 @@ export default function AppList({data, AddFavourite}) {
           </div>
           <p className='app_desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <div className="buttons">
-              <button className='like' onClick={() => {AddFavourite(appCard, index, appCard.liked)}}><img className='liked' src={appCard.liked} alt=""/></button>                
+              <button className='like' onClick={() => {AddFavourite(appCard)}}><img className='liked' src={appCard.liked} alt=""/></button>                
               <a href={appCard.href} className='visit'>Visit</a>
           </div> 
         </div>))}        
