@@ -1,16 +1,17 @@
 import Header from './components/Header';
 import Welcome from './components/Welcome';
 import Popular from './components/Popular';
+import Brands from './components/Brands';
 import './App.css';
 import { useState } from 'react';
-import notliked from "./imgs/like.png"
-import liked from "./imgs/liked.png"
-import figma from "./imgs/figma.svg"
-import sketch from "./imgs/logos_sketch.svg"
-import vscode from "./imgs/vscode.svg"
-import notion from "./imgs/notion.png"
-import slack from "./imgs/slack.svg"
-import invision from "./imgs/invision.svg"
+import notliked from "./imgs/like.png";
+import liked from "./imgs/liked.png";
+import figma from "./imgs/figma.svg";
+import sketch from "./imgs/logos_sketch.svg";
+import vscode from "./imgs/vscode.svg";
+import notion from "./imgs/notion.png";
+import slack from "./imgs/slack.svg";
+import invision from "./imgs/invision.svg";
 
 
 function App() {
@@ -110,7 +111,8 @@ function App() {
     <>
     <Header/>
     <Welcome/>
-    <Popular data={data} AddFavourite={AddFavourite}/>    
+    <Popular data={data} AddFavourite={AddFavourite}/> 
+    <Brands/>   
     </>
   );
 
