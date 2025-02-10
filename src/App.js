@@ -2,6 +2,7 @@ import Header from './components/Header';
 import Welcome from './components/Welcome';
 import Popular from './components/Popular';
 import Brands from './components/Brands';
+import NewTools from './components/NewTools';
 import './App.css';
 import { useState } from 'react';
 import notliked from "./imgs/like.png";
@@ -12,6 +13,10 @@ import vscode from "./imgs/vscode.svg";
 import notion from "./imgs/notion.png";
 import slack from "./imgs/slack.svg";
 import invision from "./imgs/invision.svg";
+import zeplin from "./imgs/zeplin.png";
+import phpstorm from "./imgs/phpstorm.png";
+import toolbox from "./imgs/toolbox.png";
+import procreate from "./imgs/procreate.png";
 
 
 function App() {
@@ -71,7 +76,7 @@ function App() {
     href : "#!"
   },
   {
-    logo : {},
+    logo : zeplin,
     title : "Zeplin",
     price : "Free & Paid",
     paragraph : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -80,7 +85,7 @@ function App() {
     href : "#!"
   },
   {
-    logo : {},
+    logo : phpstorm,
     title : "PHPStorm",
     price : "Free",
     paragraph : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -89,7 +94,7 @@ function App() {
     href : "#!"
   },
   {
-    logo : {},
+    logo : toolbox,
     title : "Toolbox",
     price : "Free",
     paragraph : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -98,7 +103,7 @@ function App() {
     href : "#!"
   },
   {
-    logo : {},
+    logo : procreate,
     title : "Procreate",
     price : "Paid",
     paragraph : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -113,6 +118,7 @@ function App() {
     <Welcome/>
     <Popular data={data} AddFavourite={AddFavourite}/> 
     <Brands/>   
+    <NewTools data={data} AddFavourite={AddFavourite}/>
     </>
   );
 

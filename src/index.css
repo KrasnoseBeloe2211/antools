@@ -353,6 +353,7 @@ p {
   margin: auto;
   display: flex;
   justify-content: center;
+  margin-bottom: 200px;
 }
 
 .brands h6{
@@ -374,4 +375,51 @@ p {
   display: flex;
   gap: 106px;
   align-items: center;
+}
+
+.explore_btn {
+  padding: 15px 40px;  
+}
+
+.title_newtools {
+  max-width: 427px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.title_newtools p {
+  max-width: 380px;
+  margin-bottom: 30px;
+}
+
+.title_newtools h1 {
+  font-weight: 500;
+}
+
+.newtools_sec {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 200px;
+}
+
+.newtools_list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  gap:24px;
+}
+
+.newtool_card {
+  width: 240px;
+  padding: 28px 22px;
+  margin-bottom: 0;
+  margin-bottom: 26px;
+}
+
+.newtool_btns {
+  display: flex;
+  gap: 120px;
 }
