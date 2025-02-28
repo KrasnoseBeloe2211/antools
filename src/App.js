@@ -3,6 +3,7 @@ import Welcome from './components/Welcome';
 import Popular from './components/Popular';
 import Brands from './components/Brands';
 import NewTools from './components/NewTools';
+import Slider from './components/Slider';
 import './App.css';
 import { useState } from 'react';
 import notliked from "./imgs/like.png";
@@ -17,10 +18,30 @@ import zeplin from "./imgs/zeplin.png";
 import phpstorm from "./imgs/phpstorm.png";
 import toolbox from "./imgs/toolbox.png";
 import procreate from "./imgs/procreate.png";
-
+import author1 from "./imgs/dav.png"
 
 function App() {
   const [favourites, SetFavourites] = useState([])
+  const [sliders, SetSliders] = useState([
+    {
+      photo : author1,
+      author_name : "Ronald Richards",
+      job : "Project Manager",
+      paragraph : "Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.",
+    },
+    {
+      photo : author1,
+      author_name : "Ronald Richards",
+      job : "Project Manager",
+      paragraph : "Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.",
+    },
+    {
+      photo : author1,
+      author_name : "Ronald Richards",
+      job : "Project Manager",
+      paragraph : "Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.",
+    }
+  ])
   const [data, SetData] = useState([{
     logo : figma,
     title : "FIGMA",
@@ -119,6 +140,7 @@ function App() {
     <Popular data={data} AddFavourite={AddFavourite}/> 
     <Brands/>   
     <NewTools data={data} AddFavourite={AddFavourite}/>
+    <Slider sliders={sliders}/>
     </>
   );
 

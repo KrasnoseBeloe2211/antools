@@ -423,3 +423,54 @@ p {
   display: flex;
   gap: 120px;
 }
+
+.s_cards {
+  overflow: hidden; 
+  display: flex;
+  align-items: center;
+}
+
+.slider_card {
+  width: 850px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.s_paragraph {
+  max-width: 390px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.author_text h3{
+  color: #fff;
+  font-weight: 500;
+  font-size: 26px;
+  margin: 0;
+}
+
+.author_text {
+  padding: 16px 24px;
+  background-color: #283336af;
+  max-width: 264px;
+  position: absolute;
+  top: 372px;
+  left: 130px;
+  border-radius: 10px;
+}
+
+.scard_photo {
+  position: relative;
+}
+
+.active_slider {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.arrow_left {
+  transform: scale(-1);
+}
