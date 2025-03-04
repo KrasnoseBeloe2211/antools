@@ -31,13 +31,13 @@ function App() {
     },
     {
       photo : author1,
-      author_name : "Ronald Richards",
+      author_name : "Ronald McDonald",
       job : "Project Manager",
       paragraph : "Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.",
     },
     {
       photo : author1,
-      author_name : "Ronald Richards",
+      author_name : "Ronald Hus",
       job : "Project Manager",
       paragraph : "Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.",
     }
@@ -140,7 +140,7 @@ function App() {
     <Popular data={data} AddFavourite={AddFavourite}/> 
     <Brands/>   
     <NewTools data={data} AddFavourite={AddFavourite}/>
-    <Slider sliders={sliders}/>
+    <Slider sliders={sliders} />
     </>
   );
 
@@ -165,6 +165,13 @@ function App() {
       SetData(new_data)  
     }               
   } 
+  // function NextSlide () {  
+  //   SetPosition(position-850)
+  //   SetStyleS({transform : `translateX(${position}px)`})
+    
+  //   console.log(position)
+  //   console.log(styleS)    
+  // }
 }
 
 export default App;
