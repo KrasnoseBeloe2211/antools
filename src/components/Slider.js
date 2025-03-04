@@ -4,19 +4,21 @@ import arrow_right from "../imgs/arrow_slider.png"
 
 let position = 0;
 export default function Slider({sliders}) {      
-    let width = -sliders.length * 850    
-    console.log(width)
+    let width = -sliders.length * 850 
+    let lastPos = width + 850   
+    console.log(lastPos)
     const [styleS, SetStyleS] = useState({transform : `translateX(${position}px)`,
     display: "flex",
     transition : "all 0.3s ease-in-out"
   }); 
   const [arrowActRight, SetarrowActRight] = useState("arrow_s arrow_right")
-  const [arrowActLeft, SetarrowActLeft] = useState("arrow_s arrow_left") 
+  const [arrowActLeft, SetarrowActLeft] = useState("arrow_s arrow_left non_active") 
   function SetNewPositionRight () {  
     position-=850      
-    if (position===width) {
-        position +=850
-    } 
+    if (position === width) {
+        position+=850        
+    }
+    
     return position
   }
   function SetNewPositionLeft () {      
@@ -28,7 +30,13 @@ export default function Slider({sliders}) {
   function NextSlide () {   
     SetStyleS({transform : `translateX(${SetNewPositionRight()}px)`,
     display: "flex",
-    transition : "all 0.3s ease-in-out"})   
+    transition : "all 0.3s ease-in-out"})
+    if (position===lastPos){
+        SetarrowActRight("arrow_s arrow_right non_active")
+    }
+    if (position !==0 ) {
+        SetarrowActLeft("arrow_s arrow_left")
+    }      
     console.log(position) 
   }
   function PrevSlide () {
@@ -36,6 +44,12 @@ export default function Slider({sliders}) {
     display: "flex",
     transition : "all 0.3s ease-in-out"    
     }) 
+    if (position===0){
+        SetarrowActLeft("arrow_s arrow_left non_active")
+    } 
+    if (position!==lastPos){
+        SetarrowActRight("arrow_s arrow_right")
+    }
   }
   return (
     <div className='slider_sec'>

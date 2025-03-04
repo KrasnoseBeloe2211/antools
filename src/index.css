@@ -501,5 +501,10 @@ p {
 }
 
 .non_active { 
-  opacity: 0%;
+  opacity: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.arrow_s {
+  transition: all 0.3s ease-in-out;
 }
