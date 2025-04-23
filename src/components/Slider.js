@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 
 import arrow_right from "../imgs/arrow_slider.png"
 
@@ -75,13 +75,7 @@ export default function Slider({sliders}) {
                         
                     </div>                   
                     <button onClick={(e) => {e.stopPropagation(); NextSlide();}} className='scard_switcher'><img className={arrowActRight} src={arrow_right}/></button>
-                </div>
-                <div className='pointers_slider'>
-                    {sliders.map((pointer, index) => (
-                        <div key={index} className='pointer'></div>
-                    ))}
-                    
-                </div>                
+                </div>                              
             </div>
         </div>        
     </div>

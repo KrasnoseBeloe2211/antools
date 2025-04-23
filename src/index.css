@@ -481,30 +481,22 @@ p {
   display: flex;    
 }
 
-.pointer {
-  width: 36px;
-  height: 5px;
-  border-radius: 10px;
-  background-color: #ff6e3091;
-}
-
-.pointer_active {
-  background-color: #ff6e30;
-  width: 38px;
-  height: 7px;
-}
-
-.pointers_slider {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
 .non_active { 
   opacity: 50%;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .arrow_s {
   transition: all 0.3s ease-in-out;
+}
+
+.scard_switcher:active {
+  transform: scale(0.9);
+  opacity: 80%;
+  transition: all 0.05s;
+  transition-timing-function: ease-in-out;
+}
+
+.slider_sec {
+  margin-bottom: 200px
 }
